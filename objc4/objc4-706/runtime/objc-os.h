@@ -811,7 +811,7 @@ class mutex_tt : nocopy_t {
 
 //        os_unfair_lock_lock_with_options_inline
 //            (&mLock, OS_UNFAIR_LOCK_DATA_SYNCHRONIZATION);
-        os_unfair_lock_unlock(&mLock);
+        os_unfair_lock_lock(&mLock);
     }
 
     void unlock() {
